@@ -29,8 +29,7 @@ public class Konyv {
         return page_count;
     }
 
-    public Konyv(int id, String title, String author, int publish_year, int page_count) {
-        this.id = id;
+    public Konyv(String title, String author, int publish_year, int page_count) {
         this.title = title;
         this.author = author;
         this.publish_year = publish_year;
