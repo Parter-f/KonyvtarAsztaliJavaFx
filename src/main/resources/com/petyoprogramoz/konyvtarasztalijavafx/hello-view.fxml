@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="com.petyoprogramoz.konyvtarasztalijavafx.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <HBox prefHeight="25.0" spacing="20.0">
+         <children>
+            <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteClick" text="Delete" />
+         </children>
+      </HBox>
+      <TableView fx:id="bookTable" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+        <columns>
+          <TableColumn fx:id="cimCol" minWidth="300.0" prefWidth="300.0" text="Cím" />
+          <TableColumn fx:id="szerzoCol" minWidth="200.0" prefWidth="200.0" text="Szerző" />
+            <TableColumn fx:id="kiadasEveCol" prefWidth="75.0" text="Kiadás Éve" />
+            <TableColumn fx:id="oldalSzamCol" minWidth="20.0" prefWidth="100.0" text="Oldalak Száma" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>
